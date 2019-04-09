@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter your height"
+        android:layout_marginTop="15dp"
+        android:id="@+id/lbl_height"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:textColor="#000"/>dp
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_height"
+        android:layout_below="@id/lbl_height"
+        android:hint="(centimeters)"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter your weight"
+        android:layout_marginTop="25dp"
+        android:id="@+id/lbl_weight"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:layout_below="@id/txt_height"
+        android:textColor="#000"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_weight"
+        android:layout_below="@id/lbl_weight"
+        android:hint="(kilograms)"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculte BMI"
+        android:layout_below="@id/txt_weight"
+        android:id="@+id/btn_cal_bmi"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btn_cal_bmi"
+        android:layout_marginTop="30dp"
+        android:text="Youy BMI is:"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:id="@+id/txt_result"/>
+
+</RelativeLayout>
